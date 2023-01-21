@@ -37,7 +37,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: bitovi/github-actions-react-to-ghp@v1.1.1
         with:
-          branch: main
-          folder: build
+          path: build
