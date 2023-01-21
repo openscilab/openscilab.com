@@ -39,4 +39,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
         with:
-          artifact_name: build
+          artifact_name: build/*
+          name: build
