@@ -1,0 +1,36 @@
+.home-layout {
+	@apply h-screen flex-center flex-col;
+
+	background: linear-gradient(270deg, #0388cc, #00a9ff);
+	background-size: 400% 400%;
+
+	-webkit-animation: GradientAnimation 5s ease infinite;
+	animation: GradientAnimation 5s ease infinite;
+
+	img {
+		@apply -mt-5;
+		width: 300px;
+		min-height: 210px;
+		filter: grayscale(1) brightness(10);
+	}
+	h1 {
+		font-size: 2rem;
+		font-weight: 100;
+		color: #fff;
+	}
+	p {
+		font-size: 1.5rem;
+		@apply text-white font-extralight animate-pulse;
+	}
+
+	.sw-con {
+		width: 250px;
+		@apply bg-white bg-opacity-5 mt-3 mb-5 overflow-hidden rounded-md;
+		.swiper-slide {
+			@apply flex-center text-white text-xl font-light;
+		}
+		.swiper-vertical {
+			height: 50px;
+		}
+	}
+}
